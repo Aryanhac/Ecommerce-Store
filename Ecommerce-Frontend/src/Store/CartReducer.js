@@ -19,7 +19,7 @@ const cartSlice=createSlice({
         },
         saveShippingInfo:(state,action)=>{
            localStorage.setItem('shipInfo',JSON.stringify(action.payload));
-           this.shippingInfo=action.payload;
+           state.shippingInfo=action.payload;
         }
     },
     extraReducers:{

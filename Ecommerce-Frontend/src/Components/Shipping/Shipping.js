@@ -26,11 +26,14 @@ const Shipping = () => {
   //submit shipping Information
   const submitHandler=(e)=>{
         e.preventDefault();
-        console.log(typeof(phone));
         if(phone.length<10||phone.length>10){
           return alert.error("Phone no. should contain only 10 digit");
         }
         dispatch(cartAction.saveShippingInfo({address,city,state,country,pincode,phone}));
+        setTimeout(()=>{
+          navigate('/confirmOrder');
+        },[1000]);
+       
   }
 
 
@@ -85,7 +88,7 @@ const Shipping = () => {
           </div>
           }
           {/* Submit form */}
-          <button type='submit' className=' bg-pink-300 m-4 text-2xl py-2 text-center shadow-md text-white font-bold w-[80%] rounded-2xl hover:bg-pink-500' onClick={()=>{navigate('/confirmOrder')}}>Continue</button>
+          <button type='submit' className=' bg-pink-300 m-4 text-2xl py-2 text-center shadow-md text-white font-bold w-[80%] rounded-2xl hover:bg-pink-500'>Continue</button>
         </form>
       </div>
     

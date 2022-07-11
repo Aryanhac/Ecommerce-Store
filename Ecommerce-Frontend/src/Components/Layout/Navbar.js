@@ -17,7 +17,7 @@ const Navbar = () => {
     setNav(!nav);
   }
   return (
-    <div className="w-full flex justify-between bg-white h-[65px] items-center px-4 pt-4 text-gray-500 shadow-lg">
+    <div className="w-full flex justify-between bg-white h-[65px] items-center px-4 pt-4 text-gray-500 shadow-lg z-20">
       {/* Humburger */}
       <div onClick={clickNav} className='lg:hidden z-20 ml-8'>
         {nav ? <FaBars></FaBars> : <FaTimes></FaTimes>}

@@ -41,7 +41,7 @@ const Shipping = () => {
       <div className=' w-[28rem] m-2 border-2 rounded-xl p-4 shadow-xl'>
         <div className='text-4xl  font-bold mb-4'>Shipping Info</div>
 
-        <form action="" className='w-full flex flex-col items-center' onSubmit={submitHandler}>
+        <form  className='w-full flex flex-col items-center' onSubmit={submitHandler}>
         {/* Address */}
           <div className='flex m-2 w-full h-12 border-b-2 border-solid border-gray-300 pl-1 pt-1 rounded-md'>
             <FaHome size={30} ></FaHome>

@@ -42,7 +42,7 @@ function App() {
   const [stripeKey,setStripeKey] = useState();
 
   const getStripeKey=async ()=>{
-    const response= await axios.get('https://apnaplaza.herokuapp.com:4000/payment/apiKey',{withCredentials:true});
+    const response= await axios.get(`https://apnaplaza.herokuapp.com:${process.env.PORT}/payment/apiKey`,{withCredentials:true});
     setStripeKey(response.data.key);
     
   }

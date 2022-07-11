@@ -55,7 +55,7 @@ const Payment = () => {
 
     try {
       const config = { headers: { "Content-Type": "application/json" }, withCredentials: true };
-      const { data } = await axios.post('https://apnaplaza.herokuapp.com:4000/payment/process', payment, config);
+      const { data } = await axios.post(`https://apnaplaza.herokuapp.com:${process.env.PORT}/payment/process`, payment, config);
       const client_Secret = data.client_secret;
       if (!stripe || !element) {
         return;

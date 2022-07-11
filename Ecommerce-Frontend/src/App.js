@@ -53,7 +53,7 @@ function App() {
     dispatch(loadUser("hello"));
   },[dispatch]); 
 
-  window.addEventListener('contextmenu',(e)=>e.preventDefault());
+  
 
   return (
      <Router>

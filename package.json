@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./Ecommerce-Backend/Server.js",
-    "dev": "nodemon ./Ecommerce-Backend/Server.js",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && npm install --prefix Ecommerce-Frontend && npm run build --prefix Ecommerce-Frontend"
+    "dev": "npm install && npm install --force --prefix Ecommerce-Frontend && npm run build --prefix Ecommerce-Frontend && nodemon ./Ecommerce-Backend/Server.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && npm install --force --prefix Ecommerce-Frontend && npm run build --prefix Ecommerce-Frontend"
   },
   "author": "",
   "license": "ISC",

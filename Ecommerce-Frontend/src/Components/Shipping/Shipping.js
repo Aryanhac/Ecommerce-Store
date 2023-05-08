@@ -32,8 +32,7 @@ const Shipping = () => {
         dispatch(cartAction.saveShippingInfo({address,city,state,country,pincode,phone}));
         setTimeout(()=>{
           navigate('/confirmOrder');
-        },[1000]);
-       
+        },[1000]);    
   }
 
 

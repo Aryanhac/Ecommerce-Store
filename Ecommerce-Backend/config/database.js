@@ -6,7 +6,7 @@ const Database=()=>{
             useNewURLParser:true,useUnifiedTopology:true
        }).then((data)=>{
            resolve('Database connnected successfully');
-       }).catch(()=>{
+       }).catch((e)=>{
            reject('Database Connection failed');
        })
     }); 

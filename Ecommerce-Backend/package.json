@@ -1,13 +1,11 @@
-{
+ {
   "name": "ecommerce-project",
   "version": "1.0.0",
   "description": "ecommerce website",
   "main": "Ecommerce-Backend/Server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./Ecommerce-Backend/Server.js",
-    "dev": "npm install && npm install --force --prefix Ecommerce-Frontend && npm run build --prefix Ecommerce-Frontend && nodemon ./Ecommerce-Backend/Server.js",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && npm install --force --prefix Ecommerce-Frontend && npm run build --prefix Ecommerce-Frontend"
+    "start": "nodemon Server.js"
   },
   "author": "",
   "license": "ISC",

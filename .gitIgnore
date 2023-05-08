@@ -1,5 +1,6 @@
 # dependencies
 /Ecommerce-Frontend/node_modules
+/Ecommerce-Backend/node_modules
 /node_modules
 /Ecommerce-Frontend/.pnp
 /Ecommerce-Frontend/.pnp.js

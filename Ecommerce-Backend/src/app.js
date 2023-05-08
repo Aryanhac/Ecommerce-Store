@@ -5,6 +5,7 @@ const app=express();
 const bodyParser =require('body-parser');
 const fileupload = require('express-fileupload');
 const path=require('path');
+var cors = require('cors')
 
 //Config
 if(process.env.NODE_ENV!=='Production'){
@@ -13,6 +14,7 @@ if(process.env.NODE_ENV!=='Production'){
 
 
 //middleware
+app.use(cors())
 app.use(bodyParser.urlencoded({extended:true,limit:"100kb"}));
 app.use(fileupload());
 app.use(express.json({limit:"100kb"}));

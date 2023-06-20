@@ -1,5 +1,5 @@
 ## Ecommerce Store
-> URL: https://apnaplaza.herokuapp.com/
+> URL: https://apna-plaza.netlify.app/
 
 ## Description
 This Application in which customer can buy products

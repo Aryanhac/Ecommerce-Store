@@ -1,5 +1,5 @@
 ## Ecommerce Store
-> URL: https://apnaplaza.herokuapp.com/
+> URL: https://apna-plaza.netlify.app/
 
 ## Description
 This Application in which customer can buy products
@@ -14,8 +14,8 @@ This Application in which customer can buy products
 * Admin System
 
 ## How To Run
-Step 1 : You need to set database connection, PORT etc.  
-Step 2 : npm run dev
+Step 1 : You need to set database connection, PORT etc in config.env file.  
+Step 2 : run backend and frontend both separately
 
 ## Inspiration
 I wanted to make Full Stack Website that's why I worked on this website 

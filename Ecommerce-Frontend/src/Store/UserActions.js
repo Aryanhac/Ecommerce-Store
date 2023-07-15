@@ -42,7 +42,7 @@ const logOutUser= createAsyncThunk("get/getLogOut", async (data,{rejectWithValue
 const updateProfile = createAsyncThunk("update/updateProfile", async (data,{rejectWithValue}) => {
     try {
         const config={headers:{"Content-Type":"multipart/form-data"},withCredentials:true};
-        const response = await axios.put(`https://apnaplaza.herokuapp.com:/profile/update`,data,config);
+        const response = await axios.put(`https://ecommerce-store-seven-nu.vercel.app/profile/update`,data,config);
         return response.data;
     } catch (error) {
         return rejectWithValue(error.response.data.message);

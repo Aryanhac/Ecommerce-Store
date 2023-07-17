@@ -1,14 +1,16 @@
 {
-    "version": 2,
-    "name": "Ecommerce-shop",
-    "builds": [
-       { "src": "Server.js", "use": "@vercel/node" }
-    ],
-    "routes": [ 
-      { "src": "/_next/static/(.*)", "dest": "/_next/static/$1" },
-      { "src": "/static/js/(.*)", "dest": "/static/js/$1" },
-      { "src": "/static/css/(.*)", "dest": "/static/css/$1" },
-      { "src": "/static/media/(.*)", "dest": "/static/media/$1" },
-       { "src": "/(.*)", "dest": "/Server.js" }
-    ]
+   "version": 2,
+   "builds": [
+     { "src": "package.json", "use": "@vercel/static-build" },
+     { "src": "api/**/*.js", "use": "@vercel/node" }
+   ],
+   "routes": [
+     { "src": "/_next/(.*)", "dest": "/_next/$1" },
+     { "src": "/static/(.*)", "dest": "/static/$1" },
+     { "src": "/favicon.ico", "dest": "/favicon.ico" },
+     { "src": "/manifest.json", "dest": "/manifest.json" },
+     { "src": "/robots.txt", "dest": "/robots.txt" },
+     { "src": "/(.*)", "dest": "/index.html" }
+   ]
  }
+ 

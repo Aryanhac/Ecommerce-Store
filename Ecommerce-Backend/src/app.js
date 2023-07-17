@@ -14,7 +14,9 @@ if(process.env.NODE_ENV!=='Production'){
 
 
 //middleware
-app.use(cors())
+app.use(cors({
+    origin: '*',
+    credentials: true }));
 app.use(bodyParser.urlencoded({extended:true,limit:"100kb"}));
 app.use(fileupload());
 app.use(express.json({limit:"100kb"}));

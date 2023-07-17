@@ -1,11 +1,11 @@
 {
-   "version": 2,
-   "builds": [{ "src": "server.js", "use": "@vercel/node" }],
-   "routes": [
-     { "src": "/static/js/(.*)", "dest": "/build/static/js/$1" },
-     { "src": "/static/css/(.*)", "dest": "/build/static/css/$1" },
-     { "src": "/static/media/(.*)", "dest": "/build/static/media/$1" },
-     { "src": "/(.*)", "dest": "/server.js" }
-   ]
+    "version": 2,
+    "name": "Ecommerce-shop",
+    "builds": [
+       { "src": "Server.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/static/(.*)", "dest": "/build/static/$1" },
+       { "src": "/(.*)", "dest": "/Server.js" }
+    ]
  }
- 

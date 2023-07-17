@@ -4,7 +4,8 @@
     "builds": [
        { "src": "Server.js", "use": "@vercel/node" }
     ],
-    "routes": [
+    "routes": [ 
+      { "src": "/static/(.*)", "dest": "/build/static/$1" },
        { "src": "/(.*)", "dest": "/Server.js" }
     ]
  }

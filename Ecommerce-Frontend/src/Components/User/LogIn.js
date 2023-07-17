@@ -3,7 +3,7 @@ import { BsEnvelopeFill, BsShieldLockFill } from 'react-icons/bs'
 import { loggedIn } from '../../Store/UserActions';
 import { useSelector, useDispatch } from 'react-redux';
 import { useAlert } from 'react-alert';
-import { useNavigate,useLocation } from 'react-router-dom';
+import { useNavigate,useLocation,Link } from 'react-router-dom';
 import {userActions } from '../../Store/UserReducer';
 import Loading from '../Layout/Loading';
 const LogIn = () => {
@@ -56,7 +56,7 @@ const LogIn = () => {
           </div>
           {/* submitButton */}
           <button type='submit' className=' bg-pink-300 m-4 text-2xl py-2 text-center shadow-md text-white font-bold w-[80%] rounded-2xl'>Sign In</button>
-          <p>Not a memeber? <a href="/Register" className='text-blue-400 border-b-2 border-blue-300'>Register</a></p>
+          <p>Not a memeber? <Link to="/Register" className='text-blue-400 border-b-2 border-blue-300'>Register</Link></p>
         </form>
           {/* forgotPassword */}
         <div className='mt-6 text-red-400 text-right'>Forgot Password?</div>

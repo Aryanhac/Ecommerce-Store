@@ -4,7 +4,7 @@ import { FaUser } from 'react-icons/fa'
 import {HiPhotograph} from 'react-icons/hi'
 import { useSelector, useDispatch } from 'react-redux'
 import { useAlert } from 'react-alert'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate,Link} from 'react-router-dom'
 import { userActions } from '../../Store/UserReducer'
 import { register } from '../../Store/UserActions'
 import Loading from '../Layout/Loading'
@@ -87,7 +87,7 @@ const Register = () => {
                     </div>
                     {/* submitButton */}
                     <button type='submit' className=' bg-pink-300 m-4 text-2xl py-2 text-center shadow-md text-white font-bold w-[80%] rounded-2xl'>Register</button>
-                    <p>Already a memeber? <a href="/LogIn" className='text-blue-400 border-b-2 border-blue-300'>Log In</a></p>
+                    <p>Already a memeber? <Link to="/LogIn" className='text-blue-400 border-b-2 border-blue-300'>Log In</Link></p>
                 </form>
 
             </div>}

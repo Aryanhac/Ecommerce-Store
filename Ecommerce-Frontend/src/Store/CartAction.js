@@ -3,7 +3,7 @@ import axios from "axios";
 // for add to the cart
 const addToCart = createAsyncThunk("add/addToCart", async (data,{rejectWithValue}) => {
     try {
-        const response = await axios.get(`https://ecommerce-store-seven-nu.vercel.app/product/${data.id}`);
+        const response = await axios.get(`http://localhost:4000/api/product/${data.id}`);
         response.data.product.quantity=data.quantity;
         return response.data.product;
     }catch(error) {

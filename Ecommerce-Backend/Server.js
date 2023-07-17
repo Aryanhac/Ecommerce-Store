@@ -11,9 +11,9 @@ process.on('uncaughtException',(err)=>{
     })
 })
 //Config
-if(process.env.NODE_ENV!=='Production'){
-    require('dotenv').config({path:'Ecommerce-Backend/config/config.env'});
-}
+// if(process.env.NODE_ENV!=='Production'){
+    // require('dotenv').config({path:'../config/config.env'});
+// }
 
 //connecting to cloudinary
 cloudinary.config({

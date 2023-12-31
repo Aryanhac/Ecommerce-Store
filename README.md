@@ -1,5 +1,5 @@
 ## Ecommerce Store
-> URL: https://apna-plaza.netlify.app/
+> URL: https://ecommerce-plaza-aryanhac.onrender.com/
 
 ## Description
 This Application in which customer can buy products
